@@ -5,7 +5,7 @@ document.getElementById('kid-profile-form').addEventListener('submit', async (e)
     const needs = document.getElementById('needs').value;
 
     try {
-        const response = await fetch('http://localhost:3000/api/kid/complete-profile', {
+        const response = await fetch('https://lifebridge-backend.onrender.com/api/kid/complete-profile', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

@@ -1,4 +1,4 @@
-fetch('http://localhost:3000/api/admin/matches', {
+fetch('https://lifebridge-backend.onrender.com/api/admin/matches', {
     headers: { Authorization: `Bearer ${localStorage.getItem('adminToken')}` }
 })
     .then(response => response.json())

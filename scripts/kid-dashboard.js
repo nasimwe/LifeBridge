@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", async () => {
     const token = localStorage.getItem('adminToken');
-    const apiBase = 'http://localhost:3000/api/kid/sponsor'; 
+    const apiBase = 'https://lifebridge-backend.onrender.com/api/kid/sponsor'; 
     const sponsorContainer = document.getElementById("sponsors-container");
     const kidContainer = document.getElementById("kids-container");
 

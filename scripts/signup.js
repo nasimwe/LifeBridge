@@ -6,7 +6,7 @@ document.getElementById('signup-form').addEventListener('submit', async (e) => {
     const role = document.getElementById('role').value;
 
     try {
-        const response = await fetch('http://localhost:3000/api/auth/register', {
+        const response = await fetch('https://lifebridge-backend.onrender.com/api/auth/register', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ name, email, password, role }),

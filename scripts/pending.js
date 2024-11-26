@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const apiBase = 'http://localhost:3000/api/admin/applications';
+    const apiBase = 'https://lifebridge-backend.onrender.com/api/admin/applications';
     const container = document.getElementById("pending-applications-container");
 
 
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function updateApplication(type, id, status) {
-    fetch(`http://localhost:3000/api/admin/${status}`, {
+    fetch(`https://lifebridge-backend.onrender.com/api/admin/${status}`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

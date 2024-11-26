@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const apiBase = 'http://localhost:3000/api/admin'; 
+    const apiBase = 'https://lifebridge-backend.onrender.com/api/admin'; 
 
     // Fetch and display pending applications
     fetch(`${apiBase}/applications`, {
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", async () => {
     const sponsorSelect = document.getElementById("sponsor-select");
     const kidsSelect = document.getElementById("kids-select");
-    const apiBase = "http://localhost:3000/api/admin";
+    const apiBase = "https://lifebridge-backend.onrender.com/api/admin";
 
     // Fetch approved sponsors and populate dropdown
     try {
@@ -155,7 +155,7 @@ function generateCard(type, entity) {
 
 
 function updateApplication(type, id, status) {
-    const apiBase = 'http://localhost:3000/api/admin'; 
+    const apiBase = 'https://lifebridge-backend.onrender.com/api/admin'; 
     fetch(`${apiBase}/${status}`, {
         method: "POST",
         headers: {

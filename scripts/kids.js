@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const apiBase = 'http://localhost:3000/api/admin/kids';
+    const apiBase = 'https://lifebridge-backend.onrender.com/api/admin/kids';
     const container = document.getElementById("kids-container");
 
     // Fetch and display kids

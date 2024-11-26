@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const apiBase = 'http://localhost:3000/api/admin/sponsors';
+    const apiBase = 'https://lifebridge-backend.onrender.com/api/admin/sponsors';
     const container = document.getElementById("sponsors-container");
 
     // Fetch and display sponsors

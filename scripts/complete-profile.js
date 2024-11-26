@@ -6,7 +6,7 @@ document.getElementById('profile-form').addEventListener('submit', async (e) => 
     const supportAreas = document.getElementById('supportAreas').value.split(',').map(area => area.trim());
 
     try {
-        const response = await fetch('http://localhost:3000/api/sponsor/signup', {
+        const response = await fetch('https://lifebridge-backend.onrender.com/api/sponsor/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
